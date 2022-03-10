@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details Web App</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+    
+    <div class="container">
+        <h1> Country Details </h1>
+        <button class="toggle"><i class="far fa-moon moon"></i>  Dark Mode </button>
+    </div>
+
+    <div class="container">
+        <div class="form-control">
+            <input type="text" placeholder="Search.." class="search">
+            <i class="fas fa-search  search"></i>
+        </div>
+    
+    <div class="dropDownCon">
+        <div class="dropDown">
+            <p>Filter by Region</p>
+            <button><i class="fas fa-chevron-down"></i></button>
+        </div>
+
+        <div class="drop showDropDown">
+            <p class="region"> All </p>
+            <p class="region"> Africa </p>
+            <p class="region"> America </p>
+            <p class="region"> Asia </p>
+            <p class="region"> Europe </p>
+            <p class="region"> Oceania </p>
+        </div>
+    </div>    
+
+    </div>
+    
+    <div class="countries">
+        
+
+    </div>
+
+    <div class="countryModel show">
+        <button class="back"> Back </button>
+        <div class="model">
+            <div class="left-model">
+                <img src="https://flagcdn.com/al.svg" alt="">
+            </div>
+            <div class="right-model">
+                <h1>Country name</h1>
+                <div class="model-info">
+                <div class="inner-left">
+                    <p><strong> Native name : </strong></p>
+                    <p><strong> Population : </strong></p>
+                    <p><strong> Region : </strong></p>
+                    <p><strong> Sub-region : </strong></p>
+                </div>
+                <div class="inner-right">
+                    <p><strong> Capital : </strong></p>
+                    <p><strong> Top Level Domain : </strong></p>
+                    <p><strong> Currencies : </strong></p>
+                    <p><strong> Languages : </strong></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<script src="index.js"></script>
+</body>
+</html>

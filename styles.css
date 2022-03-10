@@ -1,0 +1,264 @@
+@import url("https://fonts.google.com/specimen/Nunito+Sans");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    --bgColor: hsl(0,0%,98%);
+    --fontColor: hsl(200,15%,8%);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+button{
+    outline: none;
+    border: 0;
+    background: transparent;
+    color: var(--fontColor);
+
+}
+
+i{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    padding: 30px;
+    display: flex ;
+    justify-content: space-between;
+}
+
+.container:nth-child(1){
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    background: var(--countrybgColor);
+}
+
+.toggle{
+    font-size: 19.9px;
+    cursor: pointer;
+    color: var(--fontColor);
+}
+
+.toggle i{
+    padding-right: 5px ;
+}
+
+.form-control{
+    width: 400px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--countrybgColor);
+}
+
+.form-control input{
+    width: 100%;
+    padding: 17px 14px;
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    background: transparent;
+    color: var(--fontColor);
+}
+
+.form-control i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.dropDownCon{
+    width: 200px;
+    position: relative;
+    background: var(--countrybgColor);
+    border-radius: 5px;
+}
+
+
+.dropDown{
+    width: 100%;
+    padding: 17px 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.dropDown p{
+    letter-spacing: 00.5px;
+}
+
+
+.drop{
+    position: absolute ;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    top: 4rem;
+    padding: 10px 14px;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--bgColor);
+    cursor: pointer;
+    background: var(--countrybgColor);
+}
+
+.drop p{
+    margin: 5px 0;
+}
+
+.countries{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 17px ;
+}
+
+.country{
+    min-height: 350px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    width: 300px;
+    margin-bottom: 1.9rem;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--countrybgColor);
+}
+
+.country-img{
+    height: 250px;
+}
+
+.country-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.country-info{
+    padding: 23px 29px;
+    line-height: 1.8rem;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+}
+
+.country-info h5{
+    padding: 8px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+.country-info p{
+    letter-spacing: 1px;
+}
+
+.country-info p>strong{
+    font-weight: 600;
+    
+}
+
+.showDropDown{
+    display: none;
+}
+
+.dark{
+    --bgColor: hsl(207,26%,17%);
+    --fontColor:  hsl(0,0%,98%);   
+    background: var(--bgColor);
+    color: var(--fontColor) !important;
+    --countrybgColor:hsl( 209, 23%, 22%);
+}
+
+.countryModel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bgColor);
+    padding: 30px;
+}
+
+
+.back{
+    position: absolute;
+    top: 3rem;
+    left: 30px;
+    background: var(--countrybgColor);
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.model{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-model{
+    width: 50%;
+}
+
+.left-model img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-model{
+    width: 60%;
+    margin: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.model-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-model h1{
+    margin: 12px 0;
+    letter-spacing: 1px;
+    font-size: 45px;
+    font-family: sans-serif;
+    line-height: 5.9rem;
+}
+
+.inner p{
+    font-size: 20px;
+    line-height: 3.3rem;
+    letter-spacing: 1px;
+}
+
+.inner p>strong{
+    font-weight: 600;
+}
+
+.show{
+    display: none;
+}
+
+.img-flag{
+    border-radius: 7px;
+}
